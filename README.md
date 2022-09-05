@@ -50,8 +50,6 @@
 
 ### Components Arch
 
-![Components](https://file%2B.vscode-resource.vscode-cdn.net/Users/nikesh/projects/password_generator/password_generator/docs/components.png?version%3D1662362739808)
-
-
+![](docs/components.png?version%3D1662362739808)
 
 ### End
