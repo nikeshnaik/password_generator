@@ -40,17 +40,18 @@
 
 ### Tasks
 
-1. Password Generator Logic given arguments
-2. Checkboxes with hover state
-3. Character Slider 
-4. Generate Button + Copy Button
-5. Input Box
-6. Hover States.
+- [ ] Password Generator Logic given arguments - estimate 3 days - P3(high)
+- [ ] Checkboxes with hover state - estimate 1 day - P2(med)
+- [ ] Character Slider  - estimate 2 days - P2(med)
+- [ ] Generate Button + Copy Button - estimate 1 day - P3(low)
+- [ ] Input Box - estimate 2 days - P2(med)
+- [ ] Hover States. - estimate 3 days - P2(med)
 
 
 ### Components Arch
 
 ![Components](https://file%2B.vscode-resource.vscode-cdn.net/Users/nikesh/projects/password_generator/password_generator/docs/components.png?version%3D1662362739808)
+
 
 
 ### End
