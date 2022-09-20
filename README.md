@@ -41,12 +41,12 @@
 ### Tasks
 
 - [ ] Password Generator Logic given arguments - estimate 3 days - P3(high)
-- [ ] Checkboxes with hover state - estimate 1 day - P2(med)
-- [ ] Character Slider  - estimate 2 days - P2(med)
+- [x] Checkboxes - estimate 1 day - P2(med)
+- [x] Character Slider  - estimate 2 days - P2(med)
 - [ ] Generate Button + Copy Button - estimate 1 day - P3(low)
 - [ ] Input Box - estimate 2 days - P2(med)
 - [ ] Hover States. - estimate 3 days - P2(med)
-
+- [ ] CSS
 
 ### Components Arch
 

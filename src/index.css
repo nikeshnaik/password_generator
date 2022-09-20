@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+:root {
+  --light-black: rgb(36, 35, 44);
+  --grey-blue: rgb(128, 124, 146);
+  --white-plae: rgb(230, 229, 234);
+  --black: rgb(24, 23, 31);
+  --bright-green: rgb(164, 255, 175);
+  --bright-red: rgb(246, 74, 74);
+  --pale-orange: rgb(251, 124, 88);
+  --pale-yellow: rgb(248, 205, 101);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'JetBrains Mono', monospace;
 }
