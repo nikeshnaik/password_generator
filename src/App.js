@@ -2,6 +2,7 @@ import './App.css';
 import FilterBox from './components/FilterBox/filterbox';
 
 import { useState } from "react"
+import StrengthIndicator from './components/StrengthIndicator/strengthindicator';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
+      <StrengthIndicator strength_class="strong" strength_string="WEAK" />
     </div>
   );
 }

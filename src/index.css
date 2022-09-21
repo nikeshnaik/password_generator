@@ -9,8 +9,17 @@
   --bright-red: rgb(246, 74, 74);
   --pale-orange: rgb(251, 124, 88);
   --pale-yellow: rgb(248, 205, 101);
+
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+
   font-family: 'JetBrains Mono', monospace;
+  font-size: 62.5%;
 }
