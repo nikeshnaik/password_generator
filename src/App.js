@@ -1,8 +1,9 @@
-import './App.css';
+import styles from './App.module.css';
 import FilterBox from './components/FilterBox/filterbox';
-
 import { useState } from "react"
 import StrengthIndicator from './components/StrengthIndicator/strengthindicator';
+import { ReactComponent as CopyButton } from './assets/images/icon-copy.svg';
+
 
 function App() {
 
@@ -31,10 +32,15 @@ function App() {
 
 
   return (
-    <div className="App">
+    <main className={styles.App}>
+      <p className={styles.app_name}>Password Generator</p>
+      <div className={styles.password_generated}>
+        <span className={styles.password}>P4$5W0rD!</span>
+        <button className={styles.copy_btn}><CopyButton /></button>
+      </div>
       <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
       <StrengthIndicator strength_class="strong" strength_string="WEAK" />
-    </div>
+    </main >
   );
 }
 
