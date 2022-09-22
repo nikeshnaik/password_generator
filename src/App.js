@@ -3,6 +3,7 @@ import FilterBox from './components/FilterBox/filterbox';
 import { useState } from "react"
 import StrengthIndicator from './components/StrengthIndicator/strengthindicator';
 import { ReactComponent as CopyButton } from './assets/images/icon-copy.svg';
+import GeneratePassword from './components/GeneratePassword/generatepassword';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       </div>
       <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
       <StrengthIndicator strength_class="strong" strength_string="WEAK" />
+      <GeneratePassword />
     </main >
   );
 }

@@ -25,4 +25,11 @@ html {
 
 }
 
-#root {}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Check this height should be 100vh but converted to fit current css */
+  height: 60rem;
+}

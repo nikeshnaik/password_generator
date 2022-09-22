@@ -1,27 +1,20 @@
 .App {
   font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* Check this height should be 100vh but converted to fit current css */
-  height: 60rem;
-
+  width: 54rem;
 }
 
 .app_name {
   font-size: 2.4rem;
   color: var(--light-black);
-
+  margin-bottom: 1.8rem;
+  text-align: center;
 }
 
 .password_generated {
   display: flex;
-  width: 54rem;
-  height: 8rem;
   padding: 1.9rem 3.2rem 1.9rem 3.2rem;
   justify-content: space-between;
-  background-color: var(--light-black);
+  /* background-color: var(--light-black); */
   align-items: center
 }
 
