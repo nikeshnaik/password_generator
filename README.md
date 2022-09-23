@@ -47,7 +47,7 @@
 - [x] Generate Button + Copy Button - estimate 1 day - P3(low)
 - [x] Password display Box - estimate 2 days - P2(med)
 - [ ] Hover States. - estimate 3 days - P2(med)
-- [ ] CSS
+- [] CSS
 - [ ] Interactive - estimate 3 days - P2(med)
 
 ### Components Arch

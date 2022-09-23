@@ -18,7 +18,7 @@ function StrengthIndicator(props) {
 
         <div className={styles.container}>
 
-            <span>STRENGTH</span>
+            <span id={styles.strength_meta}>STRENGTH</span>
             <div className={styles.indicator}>
                 <span>{props.strength_string}</span>
                 <div className={styles.bars}>

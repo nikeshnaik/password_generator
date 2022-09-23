@@ -4,8 +4,6 @@ function FilterBox(props) {
 
 
     let checkboxes = Object.keys(props.filterChecksboxes).map((filterName, idx) => {
-
-
         return (
             <div className={styles.filterContainer} key={idx}>
                 <input type="checkbox"
@@ -22,11 +20,11 @@ function FilterBox(props) {
 
     return (
         <div className={styles.container}>
-            <div className={styles.slider}>
+            <div className={styles.slider_meta}>
                 <span>Character Length</span>
                 <span>{props.characterLen}</span>
-                <input type="range" min="1" max="20" value={props.characterLen} onChange={e => props.handleCharacterLen(e.target.value)} />
             </div>
+            <input id={styles.slider} type="range" min="1" max="20" value={props.characterLen} onChange={e => props.handleCharacterLen(e.target.value)} />
             <div className={styles.checkboxContainer}>
                 {checkboxes}
             </div>
