@@ -1,17 +1,25 @@
 .container {
+    background-color: var(--light-black);
+}
+
+.strength_indicator {
+
     display: flex;
-    width: 45.4rem;
+    width: 47.6rem;
     /* Todo update widht to parent container */
     height: 7.2rem;
     font-size: 1.8rem;
     justify-content: space-between;
     align-items: center;
     margin-left: 3.2rem;
+    background-color: var(--black);
+
 
 }
 
 #strength_meta {
     margin-left: 3.2rem;
+    color: var(--grey-blue);
 }
 
 .indicator {

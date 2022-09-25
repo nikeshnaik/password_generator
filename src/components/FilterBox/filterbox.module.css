@@ -1,5 +1,7 @@
 .container {
     padding: 3.2rem;
+    background-color: var(--light-black);
+
 }
 
 .slider_meta {
@@ -11,6 +13,7 @@
 
 .slider_meta>span+span {
     color: var(--bright-green);
+    font-size: 3.2rem;
 }
 
 #slider {
@@ -28,7 +31,8 @@
 }
 
 #slider::-moz-range-progress {
-    background-color: var(--bright-green)
+    background-color: var(--bright-green);
+    height: 0.8rem;
 }
 
 #slider::-moz-range-thumb {
@@ -77,7 +81,6 @@ input[type="checkbox"] {
 }
 
 
-
 /* Revert back here */
 input[type="checkbox"]::before {
     content: "";
@@ -91,7 +94,6 @@ input[type="checkbox"]::before {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 
 input[type="checkbox"]:checked::before {

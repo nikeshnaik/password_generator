@@ -30,19 +30,33 @@ function App() {
 
   }
 
+  const handleCopyPassword = (event) => {
+    console.log(event.target)
+    // Todo: Copy from logic not from html tree
+
+  }
+
+  const handleGeneratePassword = (event) => {
+    console.log("Generate Password")
+  }
 
 
   return (
-    <main className={styles.App}>
+    <>
       <p className={styles.app_name}>Password Generator</p>
-      <div className={styles.password_generated}>
-        <span className={styles.password}>P4$5W0rD!</span>
-        <button className={styles.copy_btn}><CopyButton /></button>
-      </div>
-      <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
-      <StrengthIndicator strength_class="strong" strength_string="WEAK" />
-      <GeneratePassword />
-    </main >
+      <main className={styles.App}>
+        <div className={styles.password_generated}>
+          <span className={styles.password}>P4$5W0rD!</span>
+          <button className={styles.copy_btn} onClick={e => handleCopyPassword(e)}>
+            <span id={styles.copied}>COPIED</span>
+            <CopyButton />
+          </button>
+        </div>
+        <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
+        <StrengthIndicator strength_class="strong" strength_string="WEAK" />
+        <GeneratePassword handleGeneratePassword={handleGeneratePassword} />
+      </main >
+    </>
   );
 }
 
