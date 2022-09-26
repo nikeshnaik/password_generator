@@ -57,7 +57,6 @@ function App() {
         <div className={styles.password_generated}>
           <span className={styles.password}>{generatedPassword}</span>
           <button className={styles.copy_btn} onClick={e => handleCopyPassword(e)}>
-            <span id={styles.copied}>COPIED</span>
             <CopyButton tabIndex={0} />
           </button>
         </div>
