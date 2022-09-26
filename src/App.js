@@ -4,6 +4,7 @@ import { useState } from "react"
 import StrengthIndicator from './components/StrengthIndicator/strengthindicator';
 import { ReactComponent as CopyButton } from './assets/images/icon-copy.svg';
 import GeneratePassword from './components/GeneratePassword/generatepassword';
+import generatePassword from './services/generatePassword';
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
   }
 
   const [filterChecksboxes, setFilterCheckBoxes] = useState(checkboxInitState)
-  const [characterLen, setCharacterLen] = useState(1)
+  const [characterLen, setCharacterLen] = useState(8)
+  const [generatedPassword, setGeneratedPassword] = useState("Password")
+  const [strength, setStrength] = useState("TOO WEAK!")
 
   const handleCheckbox = (filterName) => {
     let prevState = { ...filterChecksboxes }
@@ -31,29 +34,35 @@ function App() {
   }
 
   const handleCopyPassword = (event) => {
-    console.log(event.target)
-    // Todo: Copy from logic not from html tree
+    navigator.clipboard.writeText(generatedPassword)
 
   }
 
   const handleGeneratePassword = (event) => {
-    console.log("Generate Password")
-  }
 
+    let param_object = { ...filterChecksboxes }
+    param_object['characterLen'] = parseInt(characterLen)
+
+    const [password, strength] = generatePassword(param_object)
+
+    setGeneratedPassword(password)
+    setStrength(strength)
+
+  }
 
   return (
     <>
       <p className={styles.app_name}>Password Generator</p>
       <main className={styles.App}>
         <div className={styles.password_generated}>
-          <span className={styles.password}>PTx1f5DaFX</span>
+          <span className={styles.password}>{generatedPassword}</span>
           <button className={styles.copy_btn} onClick={e => handleCopyPassword(e)}>
             <span id={styles.copied}>COPIED</span>
             <CopyButton tabIndex={0} />
           </button>
         </div>
         <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
-        <StrengthIndicator strength_class="strong" strength_string="WEAK" />
+        <StrengthIndicator strength={strength.replace(" ", "_")} />
         <GeneratePassword handleGeneratePassword={handleGeneratePassword} />
       </main >
     </>

@@ -27,7 +27,6 @@
 .password {
   font-size: 3.2rem;
   color: var(--white-plae);
-  text-transform: uppercase;
   font-weight: 700;
   line-height: 4.2rem;
   font-style: normal;

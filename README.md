@@ -40,17 +40,17 @@
 
 ### Tasks
 
-- [ ] Password Generator Logic given arguments - estimate 3 days - P3(high)
+- [x] Password Generator Logic given arguments - estimate 3 days - P3(high)
 - [x] Checkboxes - estimate 1 day - P2(med)
 - [x] Character Slider  - estimate 2 days - P2(med)
 - [x] Strength Indicator - estime 1 day - P2(med)
 - [x] Generate Button + Copy Button - estimate 1 day - P3(low)
 - [x] Password display Box - estimate 2 days - P2(med)
-- [ ] Hover States. - estimate 3 days - P2(med)
+- [x] Hover States. - estimate 3 days - P2(med)
 - [x] Event Handlers
 - [x] CSS
-- [ ] Generate and Copy flow
-- [ ] Interactive - estimate 3 days - P2(med)
+- [x] Generate and Copy flow
+- [x] Interactive - estimate 3 days - P2(med)
 
 ### Components Arch
 

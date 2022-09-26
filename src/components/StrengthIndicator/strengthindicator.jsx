@@ -4,14 +4,14 @@ import styles from "./strengthindicator.module.css"
 function StrengthIndicator(props) {
 
     const colorWithStrengthMapping = {
-        "weak": styles.weak,
-        "too_weak": styles.too_weak,
-        "medium": styles.medium,
-        "strong": styles.strong
+        "WEAK": styles.weak,
+        "TOO_WEAK!": styles.too_weak,
+        "MEDIUM": styles.medium,
+        "STRONG": styles.strong
     }
 
     const indicatingBars = [1, 1, 1, 1].map((item, id) => {
-        return <span key={id} className={colorWithStrengthMapping[props.strength_class]}></span >
+        return <span key={id} className={colorWithStrengthMapping[props.strength]}></span >
     })
 
     return (
@@ -20,13 +20,9 @@ function StrengthIndicator(props) {
             <div className={styles.strength_indicator}>
                 <span id={styles.strength_meta}>STRENGTH</span>
                 <div className={styles.indicator}>
-                    <span>{props.strength_string}</span>
+                    <span>{props.strength}</span>
                     <div className={styles.bars}>
-                        {/* Todo Add bar_color class to based on password strength */}
-                        {/* <span className={styles.bar_color}></span>
-                    <span></span>
-                    <span></span>
-                    <span></span> */}
+
                         {indicatingBars}
                     </div>
                 </div>
