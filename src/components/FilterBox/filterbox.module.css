@@ -40,7 +40,14 @@
     height: 2.8rem;
     border-radius: 50%;
     cursor: pointer;
+
 }
+
+#slider::-moz-range-thumb:hover {
+    background-color: var(--black);
+    border-color: var(--bright-green);
+}
+
 
 .checkboxContainer {
     display: flex;
@@ -75,9 +82,15 @@ input[type="checkbox"] {
     height: 2rem;
     font: inherit;
     appearance: none;
-    border: 0.1rem var(--white-plae) solid;
+    border: 0.2rem var(--white-plae) solid;
     border-radius: 0.15rem;
     transform: translateY(-0.075rem);
+
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    border-color: var(--bright-green);
 }
 
 
@@ -95,6 +108,9 @@ input[type="checkbox"]::before {
     background-position: center;
 }
 
+input[type="checkbox"]:checked {
+    border-color: var(--bright-green);
+}
 
 input[type="checkbox"]:checked::before {
     transform: scale(1);

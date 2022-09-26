@@ -1,7 +1,6 @@
 .App {
   font-size: 2rem;
   width: 54rem;
-  /* background-color: var(--light-black); */
   color: var(--white-plae);
   margin-top: 3.1rem;
   background-color: var(--black);
@@ -29,6 +28,9 @@
   font-size: 3.2rem;
   color: var(--white-plae);
   text-transform: uppercase;
+  font-weight: 700;
+  line-height: 4.2rem;
+  font-style: normal;
 }
 
 .copy_btn {
@@ -41,11 +43,20 @@
   align-items: center;
 }
 
+.copy_btn>svg {
+  color: var(--bright-green);
+
+  cursor: pointer;
+}
+
+.copy_btn>svg:focus {
+  color: var(--white-plae);
+}
+
 #copied {
   color: var(--bright-green);
   margin-right: 1.3rem;
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-weight: 500;
-
 }

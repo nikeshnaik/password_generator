@@ -46,10 +46,10 @@ function App() {
       <p className={styles.app_name}>Password Generator</p>
       <main className={styles.App}>
         <div className={styles.password_generated}>
-          <span className={styles.password}>P4$5W0rD!</span>
+          <span className={styles.password}>PTx1f5DaFX</span>
           <button className={styles.copy_btn} onClick={e => handleCopyPassword(e)}>
             <span id={styles.copied}>COPIED</span>
-            <CopyButton />
+            <CopyButton tabIndex={0} />
           </button>
         </div>
         <FilterBox filterChecksboxes={filterChecksboxes} characterLen={characterLen} handleCharacterLen={handleCharacterLen} handleCheckbox={handleCheckbox} />
